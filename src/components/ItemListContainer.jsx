@@ -1,16 +1,5 @@
-import Container from 'react-bootstrap/Container';
-import React from 'react';
-import ItemList from './ItemList';
 
-export const ItemListContainer = () => {
-  return (
-    <Container>
-    <div>
-      
-      <ItemList />
-    </div>
-    </Container>
-  );
-};
-
-export default ItemListContainer;
+export const ItemListContainer = (props) => 
+<Container className='mt-5'>
+    <h1>{props.greeting}</h1>
+</Container>
